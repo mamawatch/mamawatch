@@ -1,0 +1,689 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>MamaWatch Association | Protecting Mothers, Saving Futures</title>
+<meta name="description" content="MamaWatch Association — a youth-led, survivor-driven maternal health initiative in Cameroon working to improve early recognition and response to preeclampsia and eclampsia.">
+<meta name="theme-color" content="#5e4b8b">
+<link rel="icon" type="image/png" href="images/favicon.png">
+<meta property="og:title" content="MamaWatch Association | Protecting Mothers, Saving Futures">
+<meta property="og:description" content="Community-led maternal health action in Cameroon.">
+<meta property="og:type" content="website">
+<style>
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@600;700&display=swap');
+:root{
+  --ink:#17232b;--muted:#637078;--purple:#5b478a;--purple2:#806bb0;
+  --gold:#c79b45;--cream:#faf8f3;--mist:#f3eff8;--line:#e4dfe9;
+  --white:#fff;--dark:#162027;--radius:24px;--shadow:0 18px 55px rgba(37,25,58,.11);
+}
+*{box-sizing:border-box}html{scroll-behavior:smooth}
+body{margin:0;color:var(--ink);font-family:"DM Sans",system-ui,sans-serif;line-height:1.65;background:#fff}
+a{color:inherit;text-decoration:none}button{font:inherit}
+.container{width:min(1160px,92%);margin:auto}
+.skip{position:absolute;left:-9999px}.skip:focus{left:16px;top:12px;z-index:99;background:#fff;padding:10px 14px;border-radius:8px}
+.topbar{background:var(--dark);color:#dfe5e7;font-size:.78rem}
+.topbar .inner{min-height:38px;display:flex;align-items:center;justify-content:space-between;gap:20px}
+.topbar strong{color:#f1d89e}.toplinks{display:flex;gap:20px}
+nav{position:sticky;top:0;z-index:50;background:rgba(255,255,255,.96);backdrop-filter:blur(16px);border-bottom:1px solid var(--line)}
+.nav-inner{min-height:94px;display:flex;flex-wrap:wrap;align-items:center;justify-content:space-between;gap:16px 24px;padding:14px 0}
+.logo{display:flex;align-items:center;gap:14px;font-weight:800;letter-spacing:.055em;color:var(--purple);font-size:1.3rem}
+.logo-mark{width:37px;height:37px;border-radius:12px;background:var(--purple);display:grid;place-items:center;color:#fff;font-weight:900;box-shadow:0 7px 18px rgba(91,71,138,.25)}
+.logo span{color:var(--gold)}
+.nav-links{display:flex;flex-wrap:wrap;gap:10px 20px;font-size:.85rem;font-weight:650;color:#4f5b62}
+.nav-links a:hover{color:var(--purple)}
+.nav-cta{padding:11px 17px;border-radius:999px;background:var(--purple);color:#fff;font-weight:750}
+.hero{position:relative;overflow:hidden;background:linear-gradient(125deg,#f4eff9 0%,#fff 56%,#fcf6e9 100%);padding:98px 0 90px}
+.hero:after{content:"";position:absolute;width:480px;height:480px;border-radius:50%;right:-180px;bottom:-300px;background:rgba(199,155,69,.11)}
+.hero-grid{display:grid;grid-template-columns:1.08fr .92fr;gap:65px;align-items:center;position:relative;z-index:1}
+.eyebrow{display:flex;align-items:center;gap:10px;color:var(--purple);font-size:.75rem;text-transform:uppercase;letter-spacing:.16em;font-weight:800}
+.eyebrow:before{content:"";width:32px;height:2px;background:var(--gold)}
+h1,h2{font-family:"Playfair Display",Georgia,serif;letter-spacing:-.035em}
+h1{font-size:clamp(3.25rem,6.4vw,5.9rem);line-height:.98;margin:18px 0 25px;max-width:850px}
+h1 em{font-style:normal;color:var(--purple)}
+.lead{font-size:1.17rem;color:var(--muted);max-width:680px}
+.actions{display:flex;gap:12px;flex-wrap:wrap;margin-top:32px}
+.btn{display:inline-flex;align-items:center;justify-content:center;padding:13px 20px;border-radius:999px;font-weight:750;border:1px solid transparent;transition:.2s}
+.btn-primary{background:var(--purple);color:#fff;box-shadow:0 10px 24px rgba(91,71,138,.22)}
+.btn-primary:hover{transform:translateY(-2px);background:#493873}.btn-outline{border-color:#8d7cac;color:var(--purple)}
+.hero-note{margin-top:25px;font-size:.82rem;color:#78838a}
+.hero-card{background:#fff;border:1px solid var(--line);border-radius:30px;padding:35px;box-shadow:var(--shadow);position:relative;overflow:hidden}
+.hero-card:before{content:"";position:absolute;width:190px;height:190px;border-radius:50%;right:-90px;top:-95px;background:#ece4f6}
+.card-content{position:relative;z-index:1}.card-label{font-size:.72rem;text-transform:uppercase;letter-spacing:.12em;font-weight:800;color:var(--gold)}
+.big-number{font-size:5.2rem;font-weight:850;line-height:1;color:var(--purple);margin-top:8px}
+.hero-card h3{font-size:1.35rem;margin:12px 0 8px}.hero-card p{color:var(--muted);margin:0}
+.section{padding:96px 0}.section-alt{background:var(--cream)}.section-purple{background:var(--mist)}
+.section-head{max-width:760px;margin-bottom:48px}
+.kicker{color:var(--gold);font-weight:850;text-transform:uppercase;letter-spacing:.14em;font-size:.72rem}
+h2{font-size:clamp(2.25rem,4.3vw,3.65rem);line-height:1.08;margin:9px 0 17px}
+.section-head p{color:var(--muted);font-size:1.04rem}
+.stats{display:grid;grid-template-columns:repeat(4,1fr);gap:16px}
+.stat{padding:29px;border-radius:22px;background:#fff;border:1px solid var(--line)}
+.stat strong{display:block;font-size:2.3rem;color:var(--purple);line-height:1.1}.stat span{display:block;margin-top:7px;color:var(--muted);font-size:.9rem}
+.section-purple .stat{background:rgba(255,255,255,.68)}
+.split{display:grid;grid-template-columns:1fr 1fr;gap:55px;align-items:start}
+.pillars{display:grid;grid-template-columns:1fr 1fr;gap:15px}
+.pillar{padding:27px;border:1px solid var(--line);border-radius:22px;background:#fff}
+.pillar-num{font-size:.73rem;font-weight:900;color:var(--gold);letter-spacing:.12em}.pillar h3{margin:11px 0 6px}.pillar p{margin:0;color:var(--muted);font-size:.92rem}
+.dark{background:var(--dark);color:#fff}.dark .section-head p{color:#bdc7cc}
+.outreach-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
+.outreach{border:1px solid var(--line);border-radius:22px;padding:27px;background:#fff}
+.outreach .num{display:inline-grid;place-items:center;width:36px;height:36px;border-radius:50%;background:var(--mist);color:var(--purple);font-weight:900}
+.outreach h3{margin:17px 0 7px;font-size:1.12rem}.outreach p{margin:0;color:var(--muted);font-size:.92rem}
+.dark .outreach{background:rgba(255,255,255,.055);border-color:rgba(255,255,255,.12)}.dark .outreach p{color:#bfc8cc}.dark .outreach .num{background:rgba(255,255,255,.1)}
+.workshop-grid{display:grid;grid-template-columns:.88fr 1.12fr;gap:55px;align-items:center}
+.highlight{font-size:1.2rem;color:var(--purple);font-weight:750}
+.timeline{display:grid;gap:0;background:#fff;border:1px solid var(--line);border-radius:25px;padding:10px 27px}
+.timeline-item{display:grid;grid-template-columns:85px 1fr;gap:18px;padding:18px 0;border-bottom:1px solid var(--line)}
+.timeline-item:last-child{border-bottom:0}.timeline-item strong{color:var(--purple)}.timeline-item div:last-child{color:#53606a}
+.quote{margin-top:48px;padding:35px;border-left:5px solid var(--gold);background:#fff;border-radius:0 20px 20px 0;font-size:1.18rem;font-weight:700;box-shadow:var(--shadow)}
+.cta{padding:82px 0;background:linear-gradient(120deg,#4f3d77,#806bb0);color:#fff}
+.cta-inner{display:flex;justify-content:space-between;gap:40px;align-items:center}.cta h2{margin-bottom:10px}.cta p{color:#eee9f5;max-width:710px}.cta .btn{background:#fff;color:var(--purple)}
+footer{background:#111a20;color:#c7d0d4;padding:48px 0 25px}.footer-grid{display:grid;grid-template-columns:1.4fr .8fr .8fr;gap:45px}.footer-brand{font-weight:850;color:#fff;font-size:1.08rem}.footer-title{font-weight:750;color:#fff;margin-bottom:10px}.footer-links{display:grid;gap:7px;font-size:.88rem}.footer-links a:hover{color:#fff}.footer-bottom{margin-top:40px;padding-top:20px;border-top:1px solid rgba(255,255,255,.12);font-size:.78rem;color:#8e9aa0;display:flex;justify-content:space-between;gap:20px}
+@media(max-width:900px){.hero-grid,.split,.workshop-grid{grid-template-columns:1fr}.stats{grid-template-columns:1fr 1fr}.outreach-grid{grid-template-columns:1fr 1fr}.footer-grid{grid-template-columns:1fr 1fr}.nav-links{display:none}}
+@media(max-width:580px){.toplinks{display:none}.hero{padding:65px 0}.section{padding:70px 0}.stats,.outreach-grid,.pillars,.footer-grid{grid-template-columns:1fr}h1{font-size:3.2rem}.big-number{font-size:4.2rem}.cta-inner{display:block}.cta .btn{margin-top:20px;width:100%}.footer-bottom{display:block}}
+.checklist{list-style:none;padding:0;margin:0;display:grid;gap:11px}
+.checklist li{display:flex;gap:11px;align-items:flex-start;font-size:.95rem}
+.checklist li:before{content:"✔";color:var(--gold);font-weight:900;flex:none;margin-top:1px}
+.solution-grid{display:grid;grid-template-columns:1fr 1fr;gap:26px}
+.solution-card{background:#fff;border:1px solid var(--line);border-radius:24px;padding:32px}
+.solution-card .tag{font-size:.72rem;text-transform:uppercase;letter-spacing:.12em;font-weight:800;color:var(--purple)}
+.solution-card h3{font-family:"Playfair Display",Georgia,serif;font-size:1.5rem;margin:10px 0 16px}
+.flow{display:flex;flex-wrap:wrap;gap:9px;align-items:center;margin-top:30px}
+.flow .step{background:#fff;border:1px solid var(--line);padding:10px 18px;border-radius:999px;font-weight:750;color:var(--purple);font-size:.92rem}
+.flow .arrow{color:var(--gold);font-weight:900}
+table.budget{width:100%;border-collapse:collapse;background:#fff;border-radius:20px;overflow:hidden;border:1px solid var(--line)}
+table.budget th,table.budget td{padding:15px 18px;text-align:left;border-bottom:1px solid var(--line);font-size:.92rem}
+table.budget th{background:var(--mist);color:var(--purple);font-weight:800;font-size:.74rem;text-transform:uppercase;letter-spacing:.08em}
+table.budget tr:last-child td{border-bottom:0;font-weight:800;color:var(--purple)}
+table.budget td:nth-child(2),table.budget td:nth-child(3){color:var(--muted)}
+table.budget tr:last-child td:nth-child(2),table.budget tr:last-child td:nth-child(3){color:var(--purple)}
+.tiers-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}
+.tier{padding:26px;border-radius:20px;border:1px solid var(--line);background:#fff}
+.tier strong{display:block;font-size:1.55rem;color:var(--purple);font-family:"Playfair Display",Georgia,serif}
+.tier p{margin:9px 0 0;color:var(--muted);font-size:.9rem}
+.story{display:grid;grid-template-columns:.82fr 1.18fr;gap:52px;align-items:center}
+.story-photo-pair{display:grid;grid-template-columns:1fr 1fr;gap:14px;align-self:start}
+.story-photo-pair figure{margin:0;border-radius:22px;overflow:hidden;box-shadow:var(--shadow);background:#fff}
+.story-photo-pair img{width:100%;aspect-ratio:3/4;object-fit:cover;display:block}
+.story-photo-pair figcaption{padding:10px 12px;font-size:.78rem;color:var(--muted);line-height:1.35}
+@media(max-width:620px){.story-photo-pair{grid-template-columns:1fr 1fr}}
+.story-portrait{aspect-ratio:4/5;border-radius:28px;background:linear-gradient(155deg,#5b478a 0%,#2f2450 100%);display:flex;align-items:flex-end;padding:28px;color:#fff;position:relative;overflow:hidden}
+.story-portrait:before{content:"“";position:absolute;top:-40px;left:14px;font-family:"Playfair Display",serif;font-size:11rem;color:rgba(255,255,255,.12)}
+.story-portrait span{font-family:"Playfair Display",Georgia,serif;font-size:1.15rem;position:relative;z-index:1}
+.campaign-stats{display:grid;grid-template-columns:repeat(3,1fr);gap:16px;margin-top:36px}
+.progress-wrap{margin-top:40px;background:#fff;border:1px solid var(--line);border-radius:22px;padding:28px 28px 24px;box-shadow:0 8px 28px rgba(37,25,58,.06)}
+.progress-top{display:flex;justify-content:space-between;align-items:baseline;flex-wrap:wrap;gap:8px;margin-bottom:12px}
+.progress-top strong{font-size:1.6rem;color:var(--purple)}
+.progress-top span{color:var(--muted);font-size:.92rem}
+.progress-track{background:#eee7f6;border-radius:999px;height:14px;overflow:hidden}
+.progress-fill{background:linear-gradient(90deg,var(--purple2),var(--purple));height:100%;border-radius:999px}
+.budget-list{margin-top:18px;list-style:none;padding:0;display:grid;gap:8px}
+.budget-list li{display:flex;justify-content:space-between;gap:12px;font-size:.92rem;color:var(--muted);border-top:1px dashed var(--line);padding-top:8px}
+.budget-list li strong{color:var(--ink)}
+.roadmap{display:grid;gap:0;background:#fff;border:1px solid var(--line);border-radius:25px;padding:8px 27px}
+.roadmap-item{display:grid;grid-template-columns:120px 1fr;gap:18px;padding:20px 0;border-bottom:1px solid var(--line)}
+.roadmap-item:last-child{border-bottom:0}
+.roadmap-item strong{color:var(--purple);font-size:.85rem;text-transform:uppercase;letter-spacing:.06em}
+.roadmap-item p{margin:6px 0 0;color:#53606a;font-size:.92rem}
+@media(max-width:900px){.solution-grid,.story,.roadmap-item{grid-template-columns:1fr}.tiers-grid,.campaign-stats{grid-template-columns:1fr 1fr}.story-portrait{aspect-ratio:16/9}}
+@media(max-width:580px){.tiers-grid,.campaign-stats{grid-template-columns:1fr}}
+
+.photo-frame{border-radius:24px;overflow:hidden;border:1px solid var(--line);box-shadow:var(--shadow)}
+.photo-frame img{display:block;width:100%;height:100%;object-fit:cover}
+.gallery{display:grid;grid-template-columns:1.3fr 1fr;gap:16px;margin-top:36px}
+.gallery .photo-frame:first-child{grid-row:span 2}
+.org-grid{display:grid;grid-template-columns:1fr 1fr;gap:30px;align-items:center}
+.org-grid .photo-frame{background:#fff;padding:14px}
+.org-grid .photo-frame img{object-fit:contain}
+.legal-note{margin-top:28px;padding:22px 26px;border:1px solid var(--line);border-radius:18px;background:#fff;font-size:.86rem;color:var(--muted)}
+.legal-note strong{color:var(--ink)}
+.contact-line{display:flex;flex-wrap:wrap;gap:22px;margin-top:14px;font-size:.9rem;color:#c7d0d4}
+@media(max-width:900px){.gallery,.org-grid{grid-template-columns:1fr}.gallery .photo-frame:first-child{grid-row:auto}}
+
+.field-strip{display:grid;grid-template-columns:repeat(3,1fr);gap:14px;margin-top:38px}
+.field-strip .photo-frame{aspect-ratio:4/3}
+.beneficiary-tags{display:flex;flex-wrap:wrap;gap:10px;margin-top:22px}
+.beneficiary-tags span{background:#fff;border:1px solid var(--line);padding:9px 16px;border-radius:999px;font-size:.85rem;font-weight:650;color:var(--purple)}
+.people-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}
+.person{padding:24px;border:1px solid var(--line);border-radius:20px;background:#fff}
+.person .role{font-size:.72rem;text-transform:uppercase;letter-spacing:.1em;font-weight:800;color:var(--gold)}
+.person h3{margin:9px 0 4px;font-size:1.08rem}
+.person p{margin:0;color:var(--muted);font-size:.88rem}
+.vision-grid{display:grid;grid-template-columns:1fr 1fr;gap:16px}
+.vision-card{padding:30px;border-radius:22px;background:#fff;border:1px solid var(--line)}
+.vision-card .kicker{margin-bottom:6px}
+.vision-card p{margin:0;color:var(--muted)}
+.table-scroll{overflow-x:auto;-webkit-overflow-scrolling:touch}
+.table-scroll table.budget{min-width:560px}
+@media(max-width:900px){.field-strip,.people-grid,.vision-grid{grid-template-columns:1fr 1fr}}
+@media(max-width:580px){.field-strip,.people-grid,.vision-grid{grid-template-columns:1fr}}
+
+.phase-strip{display:flex;flex-wrap:wrap;gap:10px;margin-top:22px}
+.phase{flex:1;min-width:180px;background:#fff;border:1px solid var(--line);border-radius:16px;padding:16px 18px}
+.phase .ph-label{font-size:.68rem;text-transform:uppercase;letter-spacing:.1em;font-weight:800;color:var(--gold)}
+.phase .ph-status{font-size:.78rem;color:var(--muted);margin-top:4px}
+.give-box{margin-top:34px;padding:28px 30px;border-radius:22px;background:#fff;border:1px solid var(--line);display:flex;flex-wrap:wrap;gap:22px;align-items:center;justify-content:space-between}
+.give-box .give-num{font-family:"Playfair Display",Georgia,serif;font-size:1.5rem;color:var(--purple)}
+.give-box p{margin:4px 0 0;color:var(--muted);font-size:.9rem}
+.btn-whatsapp{background:#25D366;color:#fff}
+.join-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:14px;margin-top:30px}
+.join-card{padding:20px;border-radius:16px;background:#fff;border:1px solid var(--line);font-size:.88rem;color:var(--muted);text-align:center;font-weight:650}
+@media(max-width:900px){.join-grid{grid-template-columns:1fr 1fr}}
+@media(max-width:580px){.join-grid{grid-template-columns:1fr}.give-box{flex-direction:column;align-items:flex-start}}
+
+.logo-img{width:58px;height:58px;border-radius:50%;object-fit:cover;box-shadow:0 7px 18px rgba(91,71,138,.2)}
+.footer-logo{display:flex;align-items:center;gap:10px;margin-bottom:6px}
+.footer-logo img{width:46px;height:46px;border-radius:50%}
+@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}.btn{transition:none}}
+
+
+.impact-highlights{display:grid;grid-template-columns:repeat(4,1fr);gap:16px;margin:28px 0}.impact-highlight{background:rgba(255,255,255,.07);border:1px solid rgba(255,255,255,.14);border-radius:18px;padding:22px}.impact-highlight strong{display:block;font-size:38px;line-height:1;margin-bottom:8px}.impact-highlight span{display:block;color:rgba(255,255,255,.78);font-size:14px;line-height:1.45}.field-results{display:grid;grid-template-columns:repeat(2,1fr);gap:20px;margin:28px 0 10px}.field-results>div{background:#fff;border-radius:22px;padding:28px;color:#1f2630}.field-results h3{margin:8px 0 10px}.field-results p{margin:0;color:#586170;line-height:1.7}@media(max-width:800px){.impact-highlights,.field-results{grid-template-columns:1fr 1fr}}@media(max-width:520px){.impact-highlights,.field-results{grid-template-columns:1fr}}
+
+/* Partnership, support and take-action sections */
+.action-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
+.action-card{background:#fff;border:1px solid var(--line);border-radius:22px;padding:28px;box-shadow:0 8px 28px rgba(37,25,58,.06)}
+.action-card .num{font-weight:850;color:var(--gold);font-size:.78rem;letter-spacing:.1em}
+.action-card h3{margin:8px 0 8px;font-size:1.22rem;color:var(--purple)}
+.action-card p{margin:0 0 18px;color:var(--muted)}
+.steps{display:grid;grid-template-columns:repeat(5,1fr);gap:14px}
+.step{padding:22px 18px;background:#fff;border:1px solid var(--line);border-radius:18px}
+.step strong{display:block;color:var(--purple);font-size:.85rem;margin-bottom:7px}
+.step p{margin:0;color:var(--muted);font-size:.92rem}
+.support-box{background:#fff;border:1px solid var(--line);border-radius:28px;padding:34px;box-shadow:var(--shadow)}
+.momo{font-size:2rem;font-weight:850;color:var(--purple);margin:8px 0}
+.notice{background:var(--mist);border-radius:16px;padding:15px 18px;margin:20px 0;color:var(--ink)}
+@media(max-width:900px){.action-grid{grid-template-columns:1fr 1fr}.steps{grid-template-columns:1fr 1fr}}
+@media(max-width:620px){.action-grid,.steps{grid-template-columns:1fr}.momo{font-size:1.55rem}}
+</style>
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+
+<div class="topbar">
+  <div class="container inner">
+    <div><strong>MamaWatch Association</strong> · Ngaoundéré, Adamawa Region, Cameroon</div>
+    <div class="toplinks"><span>Youth-led</span><span>Survivor-driven</span><span>Community-focused</span></div>
+  </div>
+</div>
+
+<nav aria-label="Main navigation">
+  <div class="container nav-inner">
+    <a class="logo" href="#" aria-label="MamaWatch home"><img class="logo-img" src="images/logo.webp" alt="MamaWatch logo">Mama<span>Watch</span></a>
+    <div class="nav-links">
+      <a href="#about">About Us</a><a href="#vision">Vision</a><a href="#story">Our Story</a><a href="#programs">Our Approach</a><a href="#our-work">Our Work</a><a href="#impact">Our Impact</a><a href="#governance">Governance</a><a href="#people">Our People</a><a href="#partner">Partner With Us</a><a href="#support">Support</a><a href="#resources">Resources</a><a href="#take-action">Take Action</a><a href="#contact">Contact</a>
+    </div>
+    <a class="nav-cta" href="#support">Support MamaWatch</a>
+  </div>
+</nav>
+
+<main id="main">
+<header class="hero">
+  <div class="container hero-grid">
+    <div>
+      <div class="eyebrow">Maternal & neonatal health · Cameroon</div>
+      <h1>Protecting Mothers.<br><em>Saving Futures.</em></h1>
+      <p class="lead">MamaWatch Association is a survivor-driven, community-based maternal and neonatal health organization working to reduce preventable maternal and newborn deaths through early recognition, timely referral, community action and stronger connections to care.</p>
+      <div class="actions">
+        <a class="btn btn-primary" href="#partner">Partner With Us</a>
+        <a class="btn btn-outline" href="#take-action">Take Action</a>
+        <a class="btn btn-primary" href="#support">Support MamaWatch</a>
+      </div>
+      <div class="hero-note">Community outreach · Technical training · ANC education · Digital advocacy</div>
+    </div>
+    <div class="hero-card">
+      <div class="card-content">
+        <div class="card-label">Community training milestone</div>
+        <div class="big-number">110</div>
+        <h3>community participants reached through the MamaWatch community training workshop</h3>
+        <p>Watchers learn to recognize danger signs, support preparedness and encourage timely referral—without making clinical diagnoses.</p>
+      </div>
+    </div>
+  </div>
+</header>
+
+<div class="section" style="padding:0 0 96px">
+  <div class="container field-strip">
+    <div class="photo-frame"><img src="images/founder-nkanjoh-stella-kari-outreach.webp" alt="Founder Nkanjoh Stella Kari at a MamaWatch outreach event"></div>
+    <div class="photo-frame"><img loading="lazy" src="images/community-members-training-workshop.webp" alt="Community members at the MamaWatch training workshop"></div>
+    <div class="photo-frame"><img loading="lazy" src="images/newly-certified-community-watchers.jpg" alt="Newly certified MamaWatch Community Watchers"></div>
+  </div>
+</div>
+
+<section id="about" class="section">
+  <div class="container">
+    <div class="section-head">
+      <div class="kicker">Our Impact to Date</div>
+      <h2>When a warning sign is not recognized, precious time is lost.</h2>
+      <p>Baseline surveys across target communities found a 93%–96% awareness gap around preeclampsia, its symptoms and its risks. MamaWatch brings practical maternal-health knowledge closer to communities, helping women, families and trusted community members recognize pregnancy danger signs, speak up and encourage timely access to care.</p>
+    </div>
+    <div class="stats">
+      <div class="stat"><strong>455+</strong><span>women reached through documented maternal-health awareness activities</span></div>
+      <div class="stat"><strong>110</strong><span>community participants reached through the June 2026 training workshop</span></div>
+      <div class="stat"><strong>105</strong><span>women reached through ANC education at Bamenda Regional Hospital</span></div>
+      <div class="stat"><strong>7+</strong><span>documented community and hospital outreach activities</span></div>
+    </div>
+  </div>
+</section>
+
+<section id="vision" class="section">
+  <div class="container vision-grid">
+    <div class="vision-card">
+      <div class="kicker">Vision</div>
+      <p>A world where no woman dies from preventable pregnancy-related complications — achieved through empowered communities, stronger health systems and the early detection, timely referral and effective management of preeclampsia and eclampsia.</p>
+    </div>
+    <div class="vision-card">
+      <div class="kicker">Mission</div>
+      <p>To reduce preventable maternal and newborn deaths through awareness, education, advocacy, community engagement, health-system strengthening and strategic partnerships.</p>
+    </div>
+  </div>
+</section>
+
+<section id="story" class="section section-purple">
+  <div class="container story">
+    <div class="story-photo-pair">
+      <figure><img loading="lazy" src="images/stella-visibly-pregnant-before-condition.webp" alt="Stella, visibly pregnant, before her condition became critical"><figcaption>Pregnant with the daughter she almost lost</figcaption></figure>
+      <figure><img loading="lazy" src="images/stella-pregnancy-showing-facial-swelling.webp" alt="Stella during her pregnancy, showing the facial swelling that was a warning sign of her severe preeclampsia"><figcaption>During pregnancy — the facial swelling that was a sign of her preeclampsia</figcaption></figure>
+    </div>
+    <div>
+      <div class="kicker">Why MamaWatch exists</div>
+      <h2>A Survivor's Story. A Community's Watch. A Mission.</h2>
+      <p>Stella's pregnancy seemed normal until persistent headaches, swelling and fatigue were repeatedly dismissed as malaria or stress. By 28 weeks her condition had become critical — and it was a neighbor, not a clinician, who recognized the danger signs and insisted she return to hospital. At 34 weeks she underwent an emergency Caesarean section, fighting severe preeclampsia for nearly ten hours. Her daughter was born prematurely at 1.3kg and spent weeks in Kangaroo Mother Care before reaching a healthy weight.</p>
+      <p>Recovering, Stella asked herself one question: <em>"What if that woman had not recognized the warning signs?"</em> She found that most women around her had never heard the word preeclampsia, despite knowing the symptoms all too well. That realization — that one informed neighbor had saved her life — became the foundation of MamaWatch.</p>
+      <div class="quote">"I survived preeclampsia, but many women do not get a second chance. Every woman deserves the opportunity to survive pregnancy and watch her child grow." — Stella</div>
+      <div class="quote" style="margin-top:14px"><strong>"I survived because someone from the community was watching. MamaWatch exists to make sure more women have someone watching."</strong></div>
+    </div>
+  </div>
+</section>
+
+<section id="programs" class="section section-alt">
+  <div class="container split">
+    <div class="section-head">
+      <div class="kicker">Our approach</div>
+      <h2>Community knowledge is part of maternal health care.</h2>
+      <p>MamaWatch works where community awareness, family support and clinical care meet — anchored by a network of trained Community Watchers who help families recognize danger signs and act early. The goal is simple: help people recognize danger, ask questions and support timely access to care.</p>
+    </div>
+    <div class="pillars">
+      <article class="pillar"><div class="pillar-num">01 · RECOGNIZE</div><h3>Recognize Early</h3><p>Helping women, families and communities recognize pregnancy danger signs early and understand when symptoms require medical attention.</p></article>
+      <article class="pillar"><div class="pillar-num">02 · ACT</div><h3>Speak Up & Act Early</h3><p>Encouraging women and those around them to take concerning symptoms seriously and seek appropriate medical care without unnecessary delay.</p></article>
+      <article class="pillar"><div class="pillar-num">03 · WATCH</div><h3>Community Watchers</h3><p>Training trusted community members to recognize warning signs, speak up, encourage timely referral and watch over mothers without replacing healthcare professionals.</p></article>
+      <article class="pillar"><div class="pillar-num">04 · EXTEND</div><h3>Extend Learning</h3><p>Using community education, survivor experiences, digital engagement and peer support to keep maternal-health knowledge moving beyond individual outreach sessions.</p></article>
+    </div>
+    <div class="beneficiary-tags">
+      <span>Pregnant women & women of reproductive age</span><span>Families & caregivers</span><span>Community Watchers & community leaders</span><span>Health professionals & health facilities</span>
+    </div>
+  </div>
+</section>
+
+<section id="our-work" class="section">
+  <div class="container">
+    <div class="section-head">
+      <div class="kicker">Our Work</div>
+      <h2>Six areas of focused, practical action.</h2>
+    </div>
+    <div class="action-grid">
+      <div class="action-card"><div class="num">👁️</div><h3>Community Watchers</h3><p>Training trusted community members to recognize pregnancy danger signs, speak up and encourage timely referral.</p></div>
+      <div class="action-card"><div class="num">📢</div><h3>Community Education & Outreach</h3><p>Awareness sessions, campaigns and events that reach women, families and communities directly, in churches, markets and homes.</p></div>
+      <div class="action-card"><div class="num">🏥</div><h3>Health-Facility & ANC Engagement</h3><p>Supporting antenatal care visits and strengthening the connection between communities and health facilities.</p></div>
+      <div class="action-card"><div class="num">🎗️</div><h3>Survivor & Peer Engagement</h3><p>Centering survivor testimony and peer support to build trust and open conversation around preeclampsia and eclampsia.</p></div>
+      <div class="action-card"><div class="num">🤝</div><h3>Advocacy & Partnerships</h3><p>Working with health authorities, institutions and partners so awareness and screening become part of the existing health system.</p></div>
+      <div class="action-card"><div class="num">💻</div><h3>Digital Health — In Development</h3><p>Exploring digital tools to complement, not replace, the human connection provided through Community Watchers and health services.</p></div>
+    </div>
+  </div>
+</section>
+
+<section id="impact" class="section dark">
+  <div class="container">
+    <div class="section-head">
+      <div class="kicker">Our Work in Communities · 2026</div>
+      <h2>From Awareness to Community Action.</h2>
+      <p>Each session creates space for questions, lived experiences and practical knowledge—and can reveal how much remains to be understood.</p>
+    </div>
+    <div class="outreach-grid">
+      <article class="outreach"><span class="num">01</span><h3>MECUDA · Feb 8, 2026</h3><p><strong>Women reached: 40</strong> · Engaged community elders and fathers to move maternal health beyond a “women-only” issue and toward a community priority.</p></article>
+      <article class="outreach"><span class="num">02</span><h3>KOMEDA Women · Mar 1, 2026</h3><p><strong>Women reached: 25</strong> · Focused on distinguishing normal pregnancy changes from critical red flags. Only one woman in the full room had previously heard the word “preeclampsia.”</p></article>
+      <article class="outreach"><span class="num">03</span><h3>Salama Muslim Women</h3><p>Reached 35 women; none had heard of preeclampsia despite many reporting severe symptoms. A participant described a friend on dialysis after unmanaged pregnancy-induced kidney failure.</p></article>
+      <article class="outreach"><span class="num">04</span><h3>Bongkisheri</h3><p>Reached 85+ men and women. Male participants followed up afterward to ask how to safeguard their wives, and the Women’s President requested a dedicated Watchers training.</p></article>
+      <article class="outreach"><span class="num">05</span><h3>Mustard-Seed Baptist Church · May 12, 2026</h3><p>Reached 15 women with survivor testimony. Mid-session, MamaWatch identified a community member hospitalized with the exact symptoms discussed — she had suffered a stillbirth from severe preeclampsia.</p></article>
+      <article class="outreach"><span class="num">06</span><h3>Presbyterian CWF · Jun 3, 2026</h3><p>Reached 37 mothers. One participant realized her own dismissed “stress” had been postpartum preeclampsia; another linked a young girl’s death, long blamed on witchcraft, to undiagnosed eclampsia.</p></article>
+      <article class="outreach"><span class="num">07</span><h3>Sumediang Community · Sep 20, 2026</h3><p>Reached 35 women from the Bakossi community after Bantai. The session focused on danger signs, risk factors, pregnancy preparation and community response, with three women pledging to become MamaWatch Watchers.</p></article>
+      <article class="outreach"><span class="num">08</span><h3>Community Watchers Workshop · Jun 6, 2026</h3><p>At Mazenod Hall in Ngaoundéré, 110 pregnant women, mothers, community elders, youth and religious leaders participated in practical training on pregnancy danger signs, preparedness and timely referral.</p></article>
+    </div>
+    <div class="impact-highlights">
+      <div class="impact-highlight"><strong>110</strong><span>community participants reached through the June 2026 Watchers Workshop</span></div>
+      <div class="impact-highlight"><strong>105</strong><span>pregnant women reached through ANC education in Bamenda</span></div>
+      <div class="impact-highlight"><strong>3</strong><span>new Watcher commitments from the September Sumediang outreach</span></div>
+      <div class="impact-highlight"><strong>7</strong><span>documented community outreach sessions in 2026</span></div>
+    </div>
+    <div class="field-results">
+      <div>
+        <div class="kicker">Beyond outreach events</div>
+        <h3>Turning health education into practical action.</h3>
+        <p>At the Salama Muslim Women’s Community, participants reported earlier and more consistent antenatal care, shared warning signs with other women, and referred four women to MamaWatch. At Bongkisheri, two men connected their wives for counselling and hospital referral; both women were preeclampsia survivors and were followed up through care. Following the Presbyterian CWF session, a woman who recognized symptoms of postpartum preeclampsia was referred to Ngaoundéré Regional Hospital and followed until her blood pressure returned to normal.</p>
+      </div>
+      <div>
+        <div class="kicker">Continuous ANC education</div>
+        <h3>Bamenda Regional Hospital</h3>
+        <p>MamaWatch delivered a two-week volunteer initiative in the ANC unit, reaching 105 women with education on preeclampsia and eclampsia, danger signs, risk factors and when to seek urgent care. Watcher educational cards were distributed for use at home. The midwife reported improved regularity in ANC attendance, earlier reporting of concerning symptoms and stronger communication between women and health workers.</p>
+      </div>
+    </div>
+    <div class="gallery">
+      
+      
+      <div class="photo-frame"><img loading="lazy" src="images/sumediang-community-women-gathered-outreach.webp" alt="Sumediang community women gathered for the MamaWatch outreach session"></div>
+      <div class="photo-frame"><img loading="lazy" src="images/facilitator-speaking-sumediang-women-about.webp" alt="MamaWatch facilitator speaking with Sumediang women about preeclampsia danger signs"></div>
+      <div class="photo-frame"><img loading="lazy" src="images/sumediang-women-posing-together-community.webp" alt="Sumediang women posing together after the MamaWatch community training"></div>
+      <div class="photo-frame"><img loading="lazy" src="images/community-members-seated-watchers-training.jpg" alt="Community members seated at the MamaWatch Watchers training and certification event"></div>
+      <div class="photo-frame"><img loading="lazy" src="images/dr-donkeng-jufo-leadership-seated.webp" alt="Dr. Donkeng Jufo and MamaWatch leadership seated beside the event banner"></div>
+      <div class="photo-frame"><img loading="lazy" src="images/association-team-members-maroon-uniform.webp" alt="MamaWatch Association team members in maroon uniform shirts at the training venue"></div>
+      <div class="photo-frame"><img loading="lazy" src="images/women-families-attending-community-health.webp" alt="Women and families attending the community health training session"></div>
+      <div class="photo-frame"><img loading="lazy" src="images/facilitator-guests-receiving-certificate-participation.webp" alt="Facilitator and guests receiving a Certificate of Participation"></div>
+      <div class="photo-frame"><img loading="lazy" src="images/team-members-outdoors-field-outreach.jpg" alt="MamaWatch team members outdoors after a field outreach session"></div>
+      <div class="photo-frame"><img loading="lazy" src="images/three-facilitators-posing-beside-associations.webp" alt="Three MamaWatch facilitators posing beside the association's roll-up banner"></div>
+      <div class="photo-frame"><img src="images/founder-nkanjoh-stella-kari-receiving.webp" alt="Founder Nkanjoh Stella Kari receiving her Certificate of Participation at the Watchers training"></div>
+      <div class="photo-frame"><img loading="lazy" src="images/banner-detailing-associations-mission-vision.webp" alt="MamaWatch banner detailing the association's mission, vision and key focus areas"></div>
+      <div class="photo-frame"><img loading="lazy" src="images/volunteers-shirt-reading-ask-me.webp" alt="A MamaWatch volunteer's shirt reading: Ask me about preeclampsia and KMC"></div>
+      <div class="photo-frame"><img loading="lazy" src="images/community-members-raising-their-certificates.webp" alt="Community members raising their certificates after completing Watchers training"></div>
+      <div class="photo-frame"><img loading="lazy" src="images/team-community-women-home-neighborhood.jpg" alt="MamaWatch team with community women during a home and neighborhood visit"></div>
+      <div class="photo-frame"><img loading="lazy" src="images/facilitator-leading-training-session-using.jpg" alt="A MamaWatch facilitator leading a training session using a laptop presentation"></div>
+      <div class="photo-frame"><img loading="lazy" src="images/facilitator-addressing-attendees-head-table.webp" alt="A facilitator addressing attendees at the head table during a training session"></div>
+      <div class="photo-frame"><img loading="lazy" src="images/volunteer-clinical-coat-partner-health.webp" alt="A MamaWatch volunteer in a clinical coat at a partner health facility"></div>
+    </div>
+  </div>
+</section>
+
+<section id="workshop" class="section section-purple">
+  <div class="container workshop-grid">
+    <div>
+      <div class="kicker">Major milestone · 06 June 2026</div>
+      <h2>Building Communities That Recognize Danger Signs Early and Watch Over Mothers.</h2>
+      <p class="highlight">Community Training Workshop · Mazenod Hall, Ngaoundéré</p>
+      <p>The workshop brought together pregnant women, mothers, community elders, youth and religious leaders for practical maternal-health education.</p>
+    </div>
+    <div class="timeline">
+      <div class="timeline-item"><strong>110</strong><div>Community participants reached</div></div>
+      <div class="timeline-item"><strong>3</strong><div>Key facilitators included MamaWatch leadership, a gynecologist-obstetrician and a senior midwife</div></div>
+      <div class="timeline-item"><strong>BP</strong><div>Training included blood-pressure monitoring and ANC preparation</div></div>
+      <div class="timeline-item"><strong>KMC</strong><div>Participants learned about Kangaroo Mother Care for premature babies</div></div>
+      <div class="timeline-item"><strong>Action</strong><div>Community leaders committed to debunk myths and encourage immediate hospital referrals</div></div>
+    </div>
+  </div>
+  <div class="container"><div class="quote">The goal is not to turn community members into clinicians. It is to help communities recognize danger, ask the right questions and support timely access to care.</div></div>
+</section>
+
+<section id="governance" class="section section-alt">
+  <div class="container">
+    <div class="section-head">
+      <div class="kicker">Governance &amp; accountability</div>
+      <h2>Governance & Accountability</h2>
+      <p>MamaWatch Association (MWA) is officially registered under Receipt of Declaration N° 030/H.52/AB/SAKJP/RM, issued 23 April 2026 by the Prefect of Vina Division, Adamawa Region. Strategic governance is kept separate from day-to-day implementation, with a clear feedback loop from community outreach back to leadership and partners.</p>
+    </div>
+    <div class="org-grid">
+      <div class="photo-frame"><img src="images/organizational-structure-founder-executive-board.webp" alt="MamaWatch organizational structure: Founder, Executive Board, Executive Director, and program teams down to Community Watchers and volunteers"></div>
+      <div class="photo-frame"><img loading="lazy" src="images/program-workflow-community-awareness-leads.webp" alt="MamaWatch program workflow: community awareness leads to screening, referral, treatment and follow-up, with data reported back to donors and health authorities"></div>
+    </div>
+    <div class="legal-note"><strong>Monitoring cadence:</strong> outreach data is reviewed monthly by the M&amp;E focal point, consolidated quarterly against targets, assessed semi-annually with the Board and partners, and evaluated annually to shape the coming year's plan.<br><br><strong>Sustainability:</strong> built on three pillars — diversified funding from grants and donors, strong local ownership through community volunteers and survivor networks, and formal collaboration with regional health authorities so awareness and screening become part of the existing health system.<br><br><strong>Governance:</strong> MamaWatch is led by an executive committee headed by President and Founder Nkanjoh Stella Kari, alongside Technical Adviser Tchoffo Mekontso Olivier, Medical Lead Mbua Besingi Essono and Secretary General Ngeugang Donfo Sonia; a formal Board of Directors and Advisory Committee are being constituted to strengthen oversight as the association grows.<br><br><strong>Health-system coordination:</strong> MamaWatch is formalizing Memoranda of Understanding with the Regional Delegation of Public Health for Adamawa and referral hospitals such as Ngaoundéré Regional Hospital, aligning training and screening with national maternal-health guidelines.</div>
+  </div>
+</section>
+
+<section id="next-phase" class="section section-alt">
+  <div class="container">
+    <div class="section-head">
+      <div class="kicker">Looking ahead</div>
+      <h2>Our Next Phase</h2>
+      <p>Current achievements are the foundation for a clear, phased path to scale.</p>
+    </div>
+    <div class="phase-strip">
+      <div class="phase"><div class="ph-label">Phase 1</div><div class="ph-status">Underway since Feb 2026 — community mobilization in Ngaoundéré and the Adamawa Region.</div></div>
+      <div class="phase"><div class="ph-label">Phase 2</div><div class="ph-status">Upcoming — expansion to additional health districts and similarly underserved regions.</div></div>
+      <div class="phase"><div class="ph-label">Phase 3</div><div class="ph-status">Future — scale-up across Cameroon through regional-authority and civil-society partnerships.</div></div>
+    </div>
+  </div>
+</section>
+
+<section id="people" class="section">
+  <div class="container">
+    <div class="section-head">
+      <div class="kicker">Our people</div>
+      <h2>Lived experience, clinical expertise, community trust.</h2>
+      <p>MamaWatch's work is led by a small team combining survivor testimony with partner clinicians and trained community facilitators.</p>
+    </div>
+    <div class="people-grid">
+      <div class="person"><div class="role">President & Founder</div><h3>Nkanjoh Stella Kari</h3><p>Survivor of severe preeclampsia; Biology/Geology teacher; provides overall leadership, testimony and strategic direction. Based in Ngaoundéré.</p></div>
+      <div class="person"><div class="role">Technical Adviser</div><h3>Tchoffo Mekontso Olivier</h3><p>Regional Pedagogic Inspector of Physics (Teacher). Based in Ngaoundéré.</p></div>
+      <div class="person"><div class="role">Medical Lead</div><h3>Mbua Besingi Essono</h3><p>Medical Doctor. Based in Buea.</p></div>
+      <div class="person"><div class="role">Secretary General</div><h3>Ngeugang Donfo Sonia</h3><p>Geology teacher; co-facilitates community outreach sessions. Based in Ngaoundéré.</p></div>
+      <div class="person"><div class="role">Clinical facilitator</div><h3>Dr. Donkeng Jufo</h3><p>Gynecologist-Obstetrician, Ngaoundéré Regional Hospital.</p></div>
+      <div class="person"><div class="role">Clinical facilitator</div><h3>Charlotte Naoussi</h3><p>Senior Midwife with 20+ years' experience.</p></div>
+      <div class="person"><div class="role">Community facilitator</div><h3>Asah Ernestine</h3><p>Outreach facilitator for church and community sessions.</p></div>
+      <div class="person"><div class="role">Community facilitator</div><h3>Atam Signorine</h3><p>Outreach facilitator for church and community sessions.</p></div>
+    </div>
+    <div class="join-grid">
+      <div class="join-card">Community health volunteers</div>
+      <div class="join-card">Survivor-ambassadors</div>
+      <div class="join-card">Student &amp; intern volunteers</div>
+      <div class="join-card">Admin &amp; event-coordination volunteers</div>
+    </div>
+  </div>
+</section>
+
+<section id="partner" class="section">
+  <div class="container">
+    <div class="section-head">
+      <div class="kicker">Partner With Us</div>
+      <h2>Turn Commitment Into Action</h2>
+      <p>MamaWatch welcomes partnerships with organizations committed to improving maternal and newborn health, strengthening communities and connecting women and families with appropriate care.</p>
+      <p class="hero-note" style="margin-top:8px">✅ Registered association · Receipt N° 030/H.52/AB/SAKJP/RM (23 Apr 2026)</p>
+    </div>
+    <div class="action-grid" style="margin-bottom:12px">
+      <div class="action-card"><div class="num">🏥</div><h3>Health Institutions</h3><p>Hospitals, health districts and clinics can partner on referral pathways, ANC screening protocols, and joint training for frontline health workers.</p></div>
+      <div class="action-card"><div class="num">🏢</div><h3>Corporate & Foundation Partners</h3><p>Fund outreach events, educational materials, digital platform development, or sponsor a district as part of your CSR or grant-making strategy.</p></div>
+      <div class="action-card"><div class="num">🎓</div><h3>NGOs, Research & Academic Partners</h3><p>Collaborate on maternal-health research, co-design curricula, or bring complementary programs (nutrition, WASH, family planning) into shared communities.</p></div>
+    </div>
+    <div class="steps">
+      <div class="step"><strong>01 — Reach Out</strong><p>Introduce your organization and tell us what you would like to achieve.</p></div>
+      <div class="step"><strong>02 — Share Your Idea</strong><p>Tell us about the health priority, community, program, research, or initiative you would like to address.</p></div>
+      <div class="step"><strong>03 — Bring Your Strengths</strong><p>Share what you can contribute—funding, expertise, research, technology, services, networks, or community reach.</p></div>
+      <div class="step"><strong>04 — Explore the Opportunity</strong><p>Connect with the MamaWatch team to identify shared priorities and practical opportunities for collaboration.</p></div>
+      <div class="step"><strong>05 — Take Action Together</strong><p>Develop and implement a clear partnership through programs, research, training, community engagement, advocacy, or resource mobilization.</p></div>
+    </div>
+    <div class="actions">
+      <a class="btn btn-primary" href="mailto:mamawatch471@gmail.com?subject=Partnership%20Request%20-%20MamaWatch">Start a Partnership Conversation →</a>
+    </div>
+    <p class="hero-note">Partnership enquiries: <a href="mailto:mamawatch471@gmail.com"><strong>mamawatch471@gmail.com</strong></a><br>We will review your request and contact you to explore the next steps.</p>
+  </div>
+</section>
+
+<section id="support" class="section section-alt">
+  <div class="container">
+    <div class="section-head">
+      <div class="kicker">Support MamaWatch</div>
+      <h2>Every Contribution Can Create an Impact</h2>
+      <p>Your support helps MamaWatch reach communities with reliable maternal-health information, strengthen Community Watchers and expand community-based action to protect mothers and newborns.</p>
+      <p class="hero-note" style="margin-top:8px">✅ Registered association · Receipt N° 030/H.52/AB/SAKJP/RM (23 Apr 2026)</p>
+    </div>
+    <div class="support-box">
+      <h3>🇨🇲 Support MamaWatch Association</h3>
+      <p>Donations support MamaWatch Association's maternal and neonatal health activities, including community education, Community Watcher training, outreach and referral support.</p>
+      <h3 style="margin-top:20px">Donate via Mobile Money</h3>
+      <p><strong>Country:</strong> Cameroon</p>
+      <div class="momo">683 485 537</div>
+      <p><strong>Account Name:</strong> Stella Nkanjoh Kari</p>
+      <div class="notice"><strong>Important:</strong> Before completing your donation, please confirm that the recipient name displayed is <strong>Stella Nkanjoh Kari</strong>.</div>
+      <h3>Donation Enquiries</h3>
+      <p>For questions, donation confirmation, or further information:</p>
+      <p><a href="mailto:mamawatch471@gmail.com"><strong>📧 mamawatch471@gmail.com</strong></a></p>
+      <a class="btn btn-primary" href="https://wa.me/237683485537?text=Hello%20MamaWatch%2C%20I%27d%20like%20to%20support%20MamaWatch.">Donate Now →</a>
+      <p class="hero-note">Thank you for standing with MamaWatch. Together, we can turn support into meaningful action and lasting impact.</p>
+    </div>
+  </div>
+</section>
+
+<section id="resources" class="section" style="padding-top:60px;padding-bottom:80px">
+  <div class="container">
+    <div class="section-head" style="margin-bottom:0">
+      <div class="kicker">Resources</div>
+      <h2>Reliable Health Information</h2>
+      <p>Explore MamaWatch resources and reliable maternal-health information designed to support informed women, families and communities.</p>
+    </div>
+    <div class="action-grid" style="margin-top:40px">
+      <div class="action-card"><div class="num">🩺</div><h3>Danger Signs Guide</h3><p>Plain-language guide to recognizing preeclampsia and eclampsia warning signs — severe headaches, swelling, blurred vision and reduced fetal movement — and when to seek urgent care.</p><a class="btn btn-outline" href="mailto:mamawatch471@gmail.com?subject=Request%3A%20Danger%20Signs%20Guide">Request a copy →</a></div>
+      <div class="action-card"><div class="num">📋</div><h3>Antenatal Care Pocket Guide</h3><p>A quick-reference companion for pregnant women attending ANC visits, developed and distributed during our Bamenda Regional Hospital outreach.</p><a class="btn btn-outline" href="mailto:mamawatch471@gmail.com?subject=Request%3A%20ANC%20Pocket%20Guide">Request a copy →</a></div>
+      <div class="action-card"><div class="num">🤱</div><h3>Kangaroo Mother Care (KMC) Basics</h3><p>Practical guidance for families caring for premature or low-birth-weight babies, as taught at the Mazenod Hall Watchers Workshop.</p><a class="btn btn-outline" href="mailto:mamawatch471@gmail.com?subject=Request%3A%20KMC%20Basics%20Guide">Request a copy →</a></div>
+      <div class="action-card"><div class="num">🎙️</div><h3>Survivor Testimony: Stella's Story</h3><p>The founder's personal account of surviving severe preeclampsia — used in community sessions to open honest conversation about danger signs.</p><a class="btn btn-outline" href="#story">Read Stella's story →</a></div>
+      <div class="action-card"><div class="num">📻</div><h3>Community Outreach Radio Scripts</h3><p>Scripts used for local radio broadcasts on preeclampsia awareness, designed for reuse by community radio stations and partner organizations.</p><a class="btn btn-outline" href="mailto:mamawatch471@gmail.com?subject=Request%3A%20Radio%20Scripts">Request a copy →</a></div>
+      <div class="action-card"><div class="num">🌍</div><h3>WHO — Pre-eclampsia Fact Sheet</h3><p>The World Health Organization's authoritative overview of pre-eclampsia: diagnosis, risk factors and global impact.</p><a class="btn btn-outline" href="https://www.who.int/news-room/fact-sheets/detail/pre-eclampsia" target="_blank" rel="noopener">Visit WHO.int →</a></div>
+    </div>
+    <p class="hero-note" style="margin-top:28px">Educational materials are available in French, English and local languages. For partner organizations and health facilities interested in bulk copies, contact <a href="mailto:mamawatch471@gmail.com"><strong>mamawatch471@gmail.com</strong></a>.</p>
+  </div>
+</section>
+
+<section id="take-action" class="section section-purple">
+  <div class="container">
+    <div class="section-head">
+      <div class="kicker">Take Action</div>
+      <h2>Be Part of the Change</h2>
+      <p>At MamaWatch, we believe meaningful change happens when communities, health professionals and partners work together.</p>
+      <p>Whether you are an individual, health professional, community leader, NGO, government institution, research organization, donor, or community group, there is a place for you to contribute.</p>
+    </div>
+    <div class="action-grid">
+      <div class="action-card"><div class="num">🤝</div><h3>Partner With Us</h3><p>Work with MamaWatch to develop programs, conduct research, strengthen communities, share expertise, mobilize resources and create lasting impact.</p><a class="btn btn-outline" href="#partner">Partner With Us →</a></div>
+      <div class="action-card"><div class="num">🙋</div><h3>Get Involved</h3><p>Give your time, skills, experience, or professional expertise to support MamaWatch initiatives and community activities.</p><a class="btn btn-outline" href="mailto:mamawatch471@gmail.com?subject=Get%20Involved%20-%20MamaWatch">Get Involved with MamaWatch →</a></div>
+      <div class="action-card"><div class="num">💬</div><h3>Share Your Story</h3><p>Your experience matters. Share your story, ideas, or community perspective to help us understand needs, raise awareness, and shape meaningful action.</p><a class="btn btn-outline" href="mailto:mamawatch471@gmail.com?subject=Share%20Your%20Story%20-%20MamaWatch">Share Your Story →</a></div>
+      <div class="action-card"><div class="num">📢</div><h3>Become a Health Champion</h3><p>Help promote reliable health information and encourage positive health practices among families and communities.</p><a class="btn btn-outline" href="mailto:mamawatch471@gmail.com?subject=Health%20Champion%20-%20MamaWatch">Become a Health Champion →</a></div>
+      <div class="action-card"><div class="num">🌍</div><h3>Join Our Community</h3><p>Stay connected with MamaWatch, receive updates, discover opportunities, and be part of a growing community committed to better health.</p><a class="btn btn-outline" href="mailto:mamawatch471@gmail.com?subject=Join%20Our%20Community%20-%20MamaWatch">Join Our Community →</a></div>
+      <div class="action-card"><div class="num">💛</div><h3>Support Our Work</h3><p>Your contribution can help MamaWatch reach more communities and strengthen initiatives focused on maternal, newborn, child, and community health.</p><a class="btn btn-primary" href="#support">Support MamaWatch →</a></div>
+    </div>
+    <div class="section-head" style="margin-top:56px;margin-bottom:0">
+      <div class="kicker">One Mission. Many Ways to Act.</div>
+      <h2>Your time. Your voice. Your expertise. Your resources. Your support.</h2>
+      <p>Whatever you can contribute, you can help MamaWatch turn ideas into action and create meaningful impact in communities.</p>
+      <div class="actions">
+        <a class="btn btn-primary" href="#partner">Partner With Us</a>
+        <a class="btn btn-outline" href="mailto:mamawatch471@gmail.com?subject=Get%20Involved%20-%20MamaWatch">Get Involved with MamaWatch</a>
+        <a class="btn btn-outline" href="mailto:mamawatch471@gmail.com?subject=Share%20Your%20Story%20-%20MamaWatch">Share Your Story</a>
+        <a class="btn btn-outline" href="mailto:mamawatch471@gmail.com?subject=Join%20Our%20Community%20-%20MamaWatch">Join Our Community</a>
+        <a class="btn btn-primary" href="#support">Support MamaWatch</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="campaign" class="section">
+  <div class="container">
+    <div class="section-head">
+      <div class="kicker">The campaign</div>
+      <h2>Save 10,000 Mothers: bringing preeclampsia care to rural Cameroon.</h2>
+      <p>A mother's life should never depend on where she lives. We're expanding proven community education into three districts — Ngaoundéré, Tiko and Yaoundé (Abongmang) — paired with a digital health platform for continuous care.</p>
+    </div>
+    <div class="campaign-stats">
+      <div class="stat"><strong>455</strong><span>women already reached through maternal-health awareness activities in Ngaoundéré</span></div>
+      <div class="stat"><strong>10,000+</strong><span>mothers and families to be reached across three districts</span></div>
+      <div class="stat"><strong>75</strong><span>Community Health Workers trained, 25 per district</span></div>
+    </div>
+    <div class="progress-wrap">
+      <div class="progress-top"><strong>$100,000</strong><span>campaign goal</span></div>
+      <p class="hero-note" style="margin:0 0 10px;font-size:.8rem">Board-approved budget for the 12-month campaign roadmap.</p>
+      <ul class="budget-list">
+        <li><span>Train 75 Community Watchers (~$250 each)</span><strong>$18,750</strong></li>
+        <li><span>75 blood-pressure screening machines (~$60 each)</span><strong>$4,500</strong></li>
+        <li><span>~60 community outreach events across 3 districts</span><strong>$30,000</strong></li>
+        <li><span>Printed educational materials &amp; training aids (posters, ANC pocket guides, radio scripts)</span><strong>$10,000</strong></li>
+        <li><span>Mobile app development &amp; maintenance</span><strong>$8,000</strong></li>
+        <li><span>Mid-term &amp; endline evaluation, monitoring, reporting</span><strong>$6,000</strong></li>
+        <li><span>Program staff &amp; field coordination (12 months)</span><strong>$15,000</strong></li>
+        <li><span>Transport &amp; logistics across 3 districts</span><strong>$7,750</strong></li>
+      </ul>
+    </div>
+    <div class="actions" style="margin-top:32px">
+      <a class="btn btn-primary" href="#support">Fund This Campaign →</a>
+      <a class="btn btn-outline" href="#partner">Partner on This Project →</a>
+    </div>
+  </div>
+</section>
+
+<section id="awareness-month" class="section">
+  <div class="container">
+    <div class="section-head">
+      <div class="kicker">Preeclampsia Awareness Month</div>
+      <h2>30 Days of Sensitization — Day 30: Support MamaWatch.</h2>
+      <p>As Preeclampsia Awareness Month comes to an end, we have one final request: support MamaWatch. There are three powerful ways you can help us save lives.</p>
+    </div>
+    <div class="action-grid">
+      <div class="action-card"><div class="num">👁️</div><h3>Be Our Eyes</h3><p>Make sure no woman around you dies from preeclampsia because warning signs were ignored. Learn the symptoms, share the information, and speak up when something is not right.</p><a class="btn btn-outline" href="#resources">Learn the symptoms →</a></div>
+      <div class="action-card"><div class="num">📢</div><h3>Invite Us</h3><p>Invite MamaWatch to churches, women's groups, schools, associations, community meetings, hospitals and gatherings. Awareness saves lives.</p><a class="btn btn-outline" href="#partner">Invite MamaWatch →</a></div>
+      <div class="action-card"><div class="num">🤝</div><h3>Donate</h3><p>Help us print educational materials, organize outreaches, train Community Watchers, and reach more women and families.</p><a class="btn btn-outline" href="#support">Donate now →</a></div>
+    </div>
+    <p class="hero-note" style="margin-top:24px">Every contribution helps us get one step closer to a future where no mother is lost to preventable preeclampsia. Together, we can protect mothers and save futures.<br><strong>Know the Symptoms. Take Action. Know Early. Act Fast. Save Lives.</strong><br><span style="font-size:.82rem;color:#8a8f98">#MamaWatch #SupportMamaWatch #Preeclampsia #MaternalHealth #WomenHealth #SafeMotherhood #CommunityHealth #PregnancyCare #SDG3</span></p>
+    <div class="gallery" style="margin-top:32px">
+      <div class="photo-frame"><img loading="lazy" src="images/campaign-day-01.webp" alt="Day 1 of MamaWatch's 30 Days of Preeclampsia Sensitization: 76,000 women die yearly from preeclampsia (WHO) — 45,600 of these deaths are preventable"></div>
+      <div class="photo-frame"><img loading="lazy" src="images/campaign-day-02.jpg" alt="Day 2 of MamaWatch's 30 Days of Preeclampsia Sensitization: Every 7 minutes, one woman dies from preeclampsia — protecting mothers, saving futures"></div>
+      <div class="photo-frame"><img loading="lazy" src="images/campaign-day-03.jpg" alt="Day 3 of MamaWatch's 30 Days of Preeclampsia Sensitization: 500,000 babies are lost every year to preeclampsia — awareness saves lives"></div>
+      <div class="photo-frame"><img loading="lazy" src="images/campaign-day-04.jpg" alt="Day 4 of MamaWatch's 30 Days of Preeclampsia Sensitization: Preeclampsia: high blood pressure in pregnancy with organ damage"></div>
+      <div class="photo-frame"><img loading="lazy" src="images/campaign-day-05.webp" alt="Day 5 of MamaWatch's 30 Days of Preeclampsia Sensitization: Eclampsia: seizures in pregnancy from untreated preeclampsia"></div>
+      <div class="photo-frame"><img loading="lazy" src="images/campaign-day-06.webp" alt="Day 6 of MamaWatch's 30 Days of Preeclampsia Sensitization: Signs and symptoms: seizures are a medical emergency — act fast"></div>
+      <div class="photo-frame"><img loading="lazy" src="images/campaign-day-07.jpg" alt="Day 7 of MamaWatch's 30 Days of Preeclampsia Sensitization: Signs and symptoms of PE: severe or persistent headache is not normal — don't ignore it"></div>
+      <div class="photo-frame"><img loading="lazy" src="images/campaign-day-08.webp" alt="Day 8 of MamaWatch's 30 Days of Preeclampsia Sensitization: Signs and symptoms of PE: blurred vision is a warning sign — check immediately"></div>
+      <div class="photo-frame"><img loading="lazy" src="images/campaign-day-09.jpg" alt="Day 9 of MamaWatch's 30 Days of Preeclampsia Sensitization: Signs and symptoms of PE: shortness of breath is a danger signal — seek help"></div>
+      <div class="photo-frame"><img loading="lazy" src="images/campaign-day-10.jpg" alt="Day 10 of MamaWatch's 30 Days of Preeclampsia Sensitization: Signs and symptoms of PE: reduced baby movement may mean baby is distressed — act fast"></div>
+      <div class="photo-frame"><img loading="lazy" src="images/campaign-day-11.webp" alt="Day 11 of MamaWatch's 30 Days of Preeclampsia Sensitization: Signs and symptoms of PE: severe upper abdominal pain can signal organ damage"></div>
+      <div class="photo-frame"><img loading="lazy" src="images/campaign-day-12.webp" alt="Day 12 of MamaWatch's 30 Days of Preeclampsia Sensitization: Signs and symptoms of PE: sudden swelling on the face, hands or knees is not normal"></div>
+      <div class="photo-frame"><img loading="lazy" src="images/campaign-day-13.webp" alt="Day 13 of MamaWatch's 30 Days of Preeclampsia Sensitization: Effects on mothers: preeclampsia can cause stroke, seizure, organ failure — even death"></div>
+      <div class="photo-frame"><img loading="lazy" src="images/campaign-day-14.webp" alt="Day 14 of MamaWatch's 30 Days of Preeclampsia Sensitization: Long-term effects of PE on mothers: heart disease, high blood pressure, kidney damage"></div>
+      <div class="photo-frame"><img loading="lazy" src="images/campaign-day-15.webp" alt="Day 15 of MamaWatch's 30 Days of Preeclampsia Sensitization: Effect of PE on babies: premature birth, low birth weight, stillbirth"></div>
+      <div class="photo-frame"><img loading="lazy" src="images/campaign-day-16.webp" alt="Day 16 of MamaWatch's 30 Days of Preeclampsia Sensitization: Risk factors: first pregnancy, multiple babies (twins or triplets)"></div>
+      <div class="photo-frame"><img loading="lazy" src="images/campaign-day-17.webp" alt="Day 17 of MamaWatch's 30 Days of Preeclampsia Sensitization: Risk factors: high blood pressure, diabetes, obesity"></div>
+      <div class="photo-frame"><img loading="lazy" src="images/campaign-day-18.webp" alt="Day 18 of MamaWatch's 30 Days of Preeclampsia Sensitization: Risk factors of PE — family history, age under 18 or over 35, personal history of PE"></div>
+      <div class="photo-frame"><img loading="lazy" src="images/campaign-day-19.webp" alt="Day 19 of MamaWatch's 30 Days of Preeclampsia Sensitization: Preparation before pregnancy: exercise 150 minutes a week for a stronger heart and lower risk"></div>
+      <div class="photo-frame"><img loading="lazy" src="images/campaign-day-20.webp" alt="Day 20 of MamaWatch's 30 Days of Preeclampsia Sensitization: Preparation before pregnancy: maintain a healthy weight (BMI 18.5–24.9) to reduce risk"></div>
+      <div class="photo-frame"><img loading="lazy" src="images/campaign-day-21.webp" alt="Day 21 of MamaWatch's 30 Days of Preeclampsia Sensitization: Preparation before pregnancy: control what you can — high BP, heart, kidney and liver issues before pregnancy"></div>
+      <div class="photo-frame"><img loading="lazy" src="images/campaign-day-22.webp" alt="Day 22 of MamaWatch's 30 Days of Preeclampsia Sensitization: Healthy pregnancy: attend all ANC visits — early detection saves lives"></div>
+      <div class="photo-frame"><img loading="lazy" src="images/campaign-day-23.webp" alt="Day 23 of MamaWatch's 30 Days of Preeclampsia Sensitization: Healthy pregnancy: know your blood pressure — monitor regularly"></div>
+      <div class="photo-frame"><img loading="lazy" src="images/campaign-day-24.webp" alt="Day 24 of MamaWatch's 30 Days of Preeclampsia Sensitization: Healthy pregnancy: listen to your body — report any changes immediately"></div>
+      <div class="photo-frame"><img loading="lazy" src="images/campaign-day-25.jpg" alt="Day 25 of MamaWatch's 30 Days of Preeclampsia Sensitization: Let every ANC visit be a PE screening visit — check BP and urine"></div>
+      <div class="photo-frame"><img loading="lazy" src="images/campaign-day-26.webp" alt="Day 26 of MamaWatch's 30 Days of Preeclampsia Sensitization: Report every new symptom: headache, swelling, blurry vision — early action saves lives"></div>
+      <div class="photo-frame"><img loading="lazy" src="images/campaign-day-27.jpg" alt="Day 27 of MamaWatch's 30 Days of Preeclampsia Sensitization: Diagnosed? Follow the doctor's plan strictly — your life depends on it"></div>
+      <div class="photo-frame"><img loading="lazy" src="images/campaign-day-28.webp" alt="Day 28 of MamaWatch's 30 Days of Preeclampsia Sensitization: Women watch your body, husbands watch your wives, parents watch your daughters"></div>
+      <div class="photo-frame"><img loading="lazy" src="images/campaign-day-29.webp" alt="Day 29 of MamaWatch's 30 Days of Preeclampsia Sensitization: Community: you watch over pregnant women — together we save lives"></div>
+    </div>
+  </div>
+</section>
+
+<section id="contact" class="cta">
+  <div class="container cta-inner">
+    <div>
+      <div class="kicker" style="color:#f3d899">Donate today. Save lives tomorrow.</div>
+      <h2>Help us reach 10,000 mothers.</h2>
+      <p>MamaWatch is building a network of informed community Watchers, health advocates and partners committed to protecting mothers and saving futures across rural Cameroon.</p>
+    </div>
+    <div style="display:flex;gap:12px;flex-wrap:wrap">
+      <a class="btn" href="#support">Support MamaWatch</a>
+      <a class="btn btn-whatsapp" href="#partner">Partner With Us</a>
+    </div>
+  </div>
+</section>
+</main>
+
+<footer>
+  <div class="container">
+    <div class="footer-grid">
+      <div>
+        <div class="footer-logo"><img src="images/logo.webp" alt="MamaWatch logo"><span class="footer-brand">MamaWatch Association (MWA)</span></div>
+        <p class="small">Protecting Mothers. Saving Futures.<br>Ngaoundéré, Adamawa Region, Cameroon.</p>
+        <p class="small" style="margin-top:10px;color:#8e9aa0">Registered association · Receipt N° 030/H.52/AB/SAKJP/RM (23 Apr 2026)</p>
+        <div class="contact-line"><a href="https://wa.me/237683485537">WhatsApp +237 683 485 537</a><span>mamawatch471@gmail.com</span></div>
+      </div>
+      <div>
+        <div class="footer-title">Explore</div>
+        <div class="footer-links"><a href="#about">About Us</a><a href="#our-work">Our Work</a><a href="#partner">Partner With Us</a><a href="#take-action">Take Action</a><a href="#resources">Resources</a><a href="#contact">Contact</a><a href="#support">Support MamaWatch</a><a href="#campaign">Save 10,000 Mothers Campaign</a><a href="#awareness-month">30 Days of Awareness</a></div>
+      </div>
+      <div>
+        <div class="footer-title">Connect</div>
+        <div class="footer-links"><a href="https://www.facebook.com/share/19qjSYMYus/?mibextid=wwXIfr" target="_blank" rel="noopener">Facebook · MamaWatch Association</a><a href="mailto:mamawatch471@gmail.com">Email MamaWatch</a><a href="https://healthpromotion-alliancecmr.org/">More information</a><a href="#contact">Partnerships</a></div>
+      </div>
+    </div>
+    <div class="footer-bottom"><span>© 2026 MamaWatch Association · Content current as of September 2026</span><span>President & Founder: Mme Nkanjoh Stella Kari</span></div>
+  </div>
+</footer>
+</body>
+</html>
